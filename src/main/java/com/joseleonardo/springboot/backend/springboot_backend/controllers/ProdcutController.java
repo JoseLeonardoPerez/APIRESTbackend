@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin({"http://localhost:5173", "http://localhost:4200"})
+@RequestMapping("/products")
 public class ProdcutController {
     final private ProductService service;
 
